@@ -1,0 +1,213 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+#cab1 {
+  width: auto;
+  height: 7vw;
+}
+header {
+  text-align: center;
+}
+header > a {
+  text-decoration: none;
+  color: #666666;
+  margin: 5vh;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+nav {
+position: absolute;
+left: 42.5%;
+top: 8%;
+}
+.menu {
+  list-style: none;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  float: left;
+}
+.menu li {
+  position: relative;
+  float: left;
+  border-right: 1px solid #c0c0c0;
+}
+.menu li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.menu li a:hover {
+  background: #333;
+  color: #fff;
+  -moz-box-shadow: 0 3px 10px 0 #ccc;
+  -webkit-box-shadow: 0 3px 10px 0 #ccc;
+  text-shadow: 0px 0px 5px #fff;
+}
+.menu li ul {
+  position: absolute;
+  top: 28.5px;
+  left: 0;
+  background-color: #fff;
+  display: none;
+}
+.menu li:hover ul,
+.menu li.over ul {
+  display: block;
+}
+.menu li ul li {
+  border: 1px solid #c0c0c0;
+  display: block;
+  width: 200px;
+}
+h1 {
+  position: relative;
+  margin: 3vh;
+  display: inline-block;
+}
+h3 {
+  text-align: center;
+}
+.linktipo1 {
+  display: block;
+  margin: 5vh;
+  text-decoration: none;
+  color: gray;
+}
+main {
+  background-color: #f0f8ff;
+  color: black;
+  display: inline-block;
+  width: 100%;
+  height: 83vh;
+}
+.imgcatalogo {
+  width: 24.75%;
+  border-radius: 20px;
+
+  /* formas de ajustar imagem e tirar fundo branco
+  aspect-ratio: 4/3;
+  object-fit: contain;
+
+  */
+  mix-blend-mode: multiply;
+}
+.imgcatalogo2 {
+  width: 50%;
+  border-radius: 20px;
+}
+.meio {
+  text-align: center;
+}
+#baixopreto {
+  background-color: rgba(207, 207, 207, 0.123);
+  width: 100%;
+  height: 75px;
+}
+#airpods {
+  width: 30%;
+  border-radius: 20px;
+  margin: 5%;
+  animation: swing 5s ease-in-out infinite;
+}
+#descricaoairpods {
+  position: absolute;
+  left: 55%;
+  top: 90%;
+}
+#descricaoairpods > h3 {
+  width: 50%;
+  margin-bottom: 5%;
+  font-size: 150px;
+}
+#descricaoairpods > h2 {
+  width: 65%;
+  text-align: justify;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(6deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(1deg);
+  }
+}
+#iphoneimg {
+  width: 45%;
+  border-radius: 20px;
+  margin: 5%;
+  position: absolute;
+  left: 50%;
+  top: 160%;
+  mix-blend-mode: multiply;
+}
+#descricaoiphone {
+  position: absolute;
+  left: 05%;
+  top: 170%;
+  background-color: transparent;
+}
+#descricaoiphone > h3 {
+  width: 50%;
+  margin-bottom: 5%;
+  font-size: 150px;
+}
+#descricaoiphone > h2 {
+  width: 30%;
+  text-align: justify;
+  margin-left: 9.5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+footer {
+  text-align: center;
+  background-color: aliceblue;
+  width: 100%;
+  height: 2vh;
+  position: absolute;
+  top: 220%;
+}
+video {
+  width: 40%;
+  position: absolute;
+  left: 55%;
+  top: 170%;
+}

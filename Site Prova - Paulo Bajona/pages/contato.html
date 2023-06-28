@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Prova - Paulo Bajona</title>
+    <link rel="stylesheet" type="text/css" href="../style/layout.css" />
+    <link rel="icon" type="image/x-icon" href="../img/logo-apple-2048.png" />
+    <link rel="stylesheet" href="../style/formulario.css" />
+  </head>
+  <body>
+    <script src="../scripts/paginacontato.js"></script>
+    <header id="cab1">
+      <h1>Apple</h1>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#">Loja</a>
+            <ul>
+              <li><a href="#">Comprar os Lançamentos</a></li>
+              <li><a href="#">Mac</a></li>
+              <li><a href="#">Ipod</a></li>
+              <li><a href="#">Iphone</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Mac</a>
+            <ul>
+              <li><a href="#">Explorar todos modelos de Mac</a></li>
+              <li><a href="#">MacBook Air</a></li>
+              <li><a href="#">MacBook Pro</a></li>
+              <li><a href="#">Mac Mini</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Suporte</a>
+            <ul>
+              <li><a href="../pages/FAQ.html">FAQ</a></li>
+              <li><a href="#">Reclame  Aqui</a></li>
+              <li><a href="#">Comunidade</a></li>
+            </ul>
+          </li>
+          <li><a href="../pages/sede.html">Sede</a></li>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="meio">
+      <main>
+        <form
+          action="
+        "
+        >
+          <fieldset>
+            <h3>Envie uma Mensagem Preenchendo o formulário abaixo</h3>
+            <p>
+              <label for="nome">Seu nome:</label>
+              <input
+                type="text"
+                placeholder="Meu nome E Sobrenome"
+                name="nome"
+                id="nome"
+              />
+            </p>
+            <p>
+              <label for="telefone">Seu Telefone: </label>
+              <input
+                type="tel"
+                placeholder="(99)999999999"
+                name="telefone"
+                id="telefone"
+              />
+            </p>
+            <p>
+              <label for="emaill">Seu E-mail:</label>
+              <input
+                type="email"
+                placeholder="meuemail@exemplo.com.br"
+                name="emaill"
+                id="emaill"
+              />
+            </p>
+            <p>
+              <label for="range"
+                >Informe quanto você ama a giorjey de 0 a 10?</label
+              >
+              <input type="range" min="0" max="10" name="range" id="range" />
+            </p>
+            <p>
+              <legend>Deseja receber nossas novidades?</legend>
+              <input
+                type="radio"
+                name="novidades"
+                id="sim"
+                value="Sim"
+                checked
+                class="radios"
+              />
+              <label for="sim">Sim</label>
+              <input
+                type="radio"
+                name="novidades"
+                id="nao"
+                value="Não"
+                class="radios"
+              />
+              <label for="nao">Não</label>
+            </p>
+            <p>
+              <label for="tempo">Selecione o Horário Dessa Mensagem</label>
+            </p>
+
+            <p>
+              <input type="time" id="tempo" name="tempo" />
+            </p>
+            <section id="alinhar">
+              <button type="button" id="enviar" onclick="enviardados()">Enviar</button>
+              <article id="resultado"></article>
+            </section>
+          </fieldset>
+        </form>
+      </main>
+    </section>
+    <footer id="footercontato">
+      <h4>Quase todos direitos reservados - ©Paulo Bajona</h4>
+    </footer>
+  </body>
+</html>
